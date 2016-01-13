@@ -2,14 +2,15 @@
     display: none !important;
 }
 
-/* Sidenav area */
-
-md-list .md-button {
-    color: inherit;
-    font-weight: 500;
-    text-align: left;
-    width: 100%;
+md-list .selected {
+    color: rgb(255, 64, 129);
 }
-md-list .md-button.selected {
-    color: #03a9f4;
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image {
+    min-height: 120px;
 }

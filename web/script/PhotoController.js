@@ -14,6 +14,7 @@
         self.photos = [];
         self.selectPhoto = selectPhoto;
         self.toggleList = toggleList;
+        self.isSelected = isSelected;
 
         photoService
             .loadAllPhotos()
@@ -29,6 +30,10 @@
         function selectPhoto(photo) {
             self.selected = angular.isNumber(photo) ? $scope.photos[photo] : photo;
             self.toggleList();
+        }
+
+        function isSelected(photo) {
+            return self.selected == photo;
         }
     }
 
