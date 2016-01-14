@@ -18,8 +18,8 @@
 
         photoService
             .loadAllPhotos()
-            .then( function( photos ) {
-                self.photos    = [].concat(photos);
+            .then(function (photos) {
+                self.photos = [].concat(photos);
                 self.selected = photos[0];
             });
 

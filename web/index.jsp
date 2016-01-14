@@ -25,12 +25,15 @@
         </h2>
     </md-toolbar>
 
-    <md-content>
+    <md-content flex>
         <md-list>
-            <md-list-item md-no-ink ng-repeat="photo in photoCtrl.photos"
-                          ng-click="photoCtrl.selectPhoto(photo)"
-                          ng-class="{'selected': photoCtrl.isSelected(photo)}">
-                {{photo.title}}
+            <md-list-item ng-repeat="photo in photoCtrl.photos">
+                <div class="md-list-item-text no-select"
+                     layout="column" layout-padding
+                     ng-click="photoCtrl.selectPhoto(photo)"
+                     ng-class="{'selected': photoCtrl.isSelected(photo)}">
+                    <span>{{photo.title}}</span>
+                </div>
             </md-list-item>
         </md-list>
     </md-content>
