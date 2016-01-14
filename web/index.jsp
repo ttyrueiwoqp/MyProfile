@@ -26,7 +26,7 @@
     </md-toolbar>
 
     <md-content flex>
-        <md-list>
+        <md-list layout="column" layout-padding>
             <md-list-item ng-repeat="photo in photoCtrl.photos">
                 <div class="md-list-item-text no-select"
                      layout="column" layout-padding
