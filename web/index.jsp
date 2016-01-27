@@ -53,7 +53,7 @@
         </div>
     </md-toolbar>
 
-    <md-content flex layout-padding layout-margin>
+    <md-content flex layout-padding>
         <section>
             <div layout="column" layout-align="center center">
                 <img class="image" ng-src="{{photoCtrl.selected.url}}">
