@@ -3,7 +3,7 @@
 }
 
 .image {
-    max-width: 800px !important;
+    max-width: 800px;
     max-height: 600px;
     min-width: 160px;
     min-height: 120px;
