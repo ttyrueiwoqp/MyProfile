@@ -55,8 +55,8 @@
 
     <md-content flex layout-padding layout-margin>
         <section>
-            <div layout="column" layout-align="center center" class="image">
-                <img ng-src="{{photoCtrl.selected.url}}" height="600" width="800">
+            <div layout="column" layout-align="center center">
+                <img class="image" ng-src="{{photoCtrl.selected.url}}">
             </div>
         </section>
         <section>
