@@ -3,11 +3,11 @@
     angular
         .module('MyProfileApp')
         .controller('PhotoController', [
-            'photoService', '$mdSidenav', '$mdBottomSheet', '$log',
+            'photoService', '$mdSidenav',
             PhotoController
         ]);
 
-    function PhotoController(photoService, $mdSidenav, $mdBottomSheet, $log) {
+    function PhotoController(photoService, $mdSidenav) {
         var self = this;
 
         self.selected = null;
@@ -28,7 +28,7 @@
         }
 
         function selectPhoto(photo) {
-            self.selected = angular.isNumber(photo) ? $scope.photos[photo] : photo;
+            self.selected = angular.isNumber(photo) ? self.photos[photo] : photo;
             self.toggleList();
         }
 
