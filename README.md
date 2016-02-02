@@ -1,2 +1,2 @@
 # MyProfile
-qiao-li-profile.appspot.com
+[Li's Sketch Book](http://qiao-li-profile.appspot.com/)
